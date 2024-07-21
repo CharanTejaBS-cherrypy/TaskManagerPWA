@@ -1,0 +1,233 @@
+body {
+  /* border: #c82333 solid 5px;
+    border-style: double; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image:linear-gradient(90deg, rgb(2, 2, 61), blue, blue, rgb(1, 1, 41));
+  margin: 0;
+  padding: 20px;
+  /* height: 90vh; */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: rgb(30, 132, 152) solid 3px;
+  border-style: groove;
+  background-color: rgb(80, 224, 253);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: rgba(0, 255, 187, 0.55) 2px 2px 4px;
+  font-size: 3.6rem;
+  margin-bottom: 20px;
+}
+
+.category-form,
+.task-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.category-form {
+  border: orange solid 3px;
+  border-style: groove;
+  background-color: rgb(255, 201, 165);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.task-form {
+  border: rgb(0, 198, 56) solid 3px;
+  border-style: groove;
+  background-color: rgb(133, 255, 170);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.category-form input,
+.task-form input,
+.task-form select {
+  background-color: #eeedff;
+  padding: 10px;
+  border: 2px double #09094b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  border: 2px rgb(255, 0, 0) groove;
+  border-radius: 5px;
+  background-color: #fb6f6f;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: red;
+  box-shadow: rgb(2, 1, 43) 0px 0px 2px;
+  transform: scale(0.96);
+  transition: ease-in-out 400ms;
+}
+
+#categories {
+  border: rgb(222, 228, 22) solid 3px;
+  border-style: groove;
+  background-color: rgb(255, 247, 133);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  max-height: 800px;
+  overflow-y: scroll;
+  overflow-x: fixed;
+}
+
+.category {
+  margin-bottom: 20px;
+  background-color: #88740f76;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: yellow dashed;
+}
+
+.category h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #414004;
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+  /* max-height: 200px; */
+  overflow-y: auto;
+  overflow-x: fixed;
+}
+
+.tasks li {
+  background-color: rgb(255, 247, 0);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #b0ad09;
+  border-style: solid;
+}
+
+.tasks li.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.tasks li button {
+  padding: 5px 5px;
+  border: red double 2px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tasks li button:hover {
+  background-color: #c82333;
+}
+
+.remove-category {
+  background-color: #154a4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+.remove-category:hover {
+  background-color: #c82333;
+  /* transform: rotateX(-45deg) rotateY(-45deg); */
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .category-form input,
+  .task-form input,
+  .task-form select {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .category h2 {
+    font-size: 1rem;
+  }
+
+  .tasks li button {
+    font-size: 0.5rem;
+  }
+
+  #categories {
+    border: rgb(222, 228, 22) solid 3px;
+    border-style: groove;
+    background-color: rgb(255, 247, 133);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: fixed;
+  }
+}
