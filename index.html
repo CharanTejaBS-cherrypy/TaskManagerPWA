@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo1.jpg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+    <div class="main">
+      <div class="container">
+        <div class="category-form">
+          <input
+            type="text"
+            id="new-category"
+            placeholder="New Category Name"
+          />
+          <button id="add-category">Create Category</button>
+        </div>
+        <div class="task-form">
+          <input type="text" id="task-name" placeholder="New Task Name" />
+          <select id="category-select"></select>
+          <button id="add-task">Add Task</button>
+        </div>
+        <div id="categories"></div>
+      </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

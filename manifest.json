@@ -1,0 +1,21 @@
+{
+    "name": "Task Manager",
+    "short_name": "Tasks",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "Logo1.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      },
+      {
+        "src": "Logo1.jpg",
+        "sizes": "512x512",
+        "type": "image/jpg"
+      }
+    ]
+  }
+  
